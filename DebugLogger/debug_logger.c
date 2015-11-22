@@ -80,7 +80,7 @@ void debug_log(char* str) {
 
 void init_debug_log() {
 	UCSR0A = _BV(U2X0);
-	UBRR0L = 8; //115200 baud - see page 188 of ATmega328 book
+	UBRR0L = 8; //115200 baud - see page 189 of ATmega328 book (error is -3.5%!)
 	UCSR0B = _BV(TXEN0); /* only tx enable */
 }
 
